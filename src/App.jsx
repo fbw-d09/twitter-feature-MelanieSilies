@@ -1,3 +1,6 @@
+import React, { useState } from 'react';
+import { UserCardList, ToFollow } from './components';
+
 
 const users = [
   {
@@ -26,16 +29,16 @@ const users = [
     bio: 'LEARN FOR A NEW LIFE 💙',
     isFollowing: true
   }
-]
-
+];
 
 
 function App() {
-
-
   return (
     <div className="App">
-        {/* Happy Coding starts here */}
+        <div className="container">
+          <h1>Who to follow</h1>
+          <UserCardList users={ users }/>
+        </div>
     </div>
   )
 }
